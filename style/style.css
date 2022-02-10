@@ -32,10 +32,10 @@ a {
     text-decoration: none;
 }
 h1 {
-    font-size: 4.8rem;
+    font-size: 5.2rem;
 }
 h2 {
-    font-size: 4rem;
+    font-size: 4.9rem;
     font-weight: 300;
 }
 h3 {
@@ -155,7 +155,7 @@ img {
         margin-top: 25rem;
     }
 }
-/* SECCION LODGE */
+/* SECCION */
 .seccion {
     margin-top: 6rem;
 }
@@ -170,33 +170,78 @@ img {
     position: relative;
     transition: 0.3s ease;
 }
+.seccion-texto a {
+    position: relative;
+}
+.seccion-texto a::after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 1rem;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    background: var(--color-principal);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.seccion-texto a:hover::after { 
+    width: 90%; 
+    left: 20%; 
+}
+.sobre-titulo::after {
+    top: 17%;
+    left: 0;
+    content: "Sobre";
+    color: rgba(161, 161, 161, 0.39);
+    width: 100%;
+    height: 100%;
+    font-size: 5rem;
+    line-height: 2.5;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: absolute; 
+}
+.lodge-titulo::after {
+    top: 17%;
+    left: 0;
+    content: "Estancias";
+    color: rgba(161, 161, 161, 0.39);
+    width: 100%;
+    height: 100%;
+    font-size: 5rem;
+    line-height: 2.5;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: absolute; 
+}
+.itinerary-titulo::after {
+    top: 17%;
+    left: 0;
+    content: "Itinerario";
+    color: rgba(161, 161, 161, 0.39);
+    width: 100%;
+    height: 100%;
+    font-size: 5rem;
+    line-height: 2.5;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: absolute; 
+}
 @media (min-width: 768px) {
     .sobre-titulo::after {
         top: 15%;
         left: 40%;
-        content: "Sobre";
-        color: rgba(161, 161, 161, 0.39);
-        width: 100%;
-        height: 100%;
-        font-size: 5rem;
-        line-height: 2.5;
-        font-weight: 800;
-        text-transform: uppercase;
-        position: absolute; 
         transition: left 0.3s ease 0s, top 0.3s ease 0s;
     }
     .lodge-titulo::after {
         top: 15%;
         left: 40%;
-        content: "Estancias";
-        color: rgba(161, 161, 161, 0.39);
-        width: 100%;
-        height: 100%;
-        font-size: 5rem;
-        line-height: 2.5;
-        font-weight: 800;
-        text-transform: uppercase;
-        position: absolute; 
+        transition: left 0.3s ease 0s, top 0.3s ease 0s;
+    }
+    .itinerary-titulo::after {
+        top: 15%;
+        left: 40%;
         transition: left 0.3s ease 0s, top 0.3s ease 0s;
     }
     .seccion-texto h2:hover::after {
@@ -237,6 +282,26 @@ img {
         font-size: 2.5rem;
     }
 }
+.seccion-info-itinerary img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.seccion-info-itinerary span {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--color-principal);
+}
+@media (min-width: 768px) {
+    .seccion-info-itinerary img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
 
 /* Adaptacion de la galeria de Yoksel  */
 .wrapper {
