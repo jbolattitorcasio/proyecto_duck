@@ -252,7 +252,6 @@ img {
         transform: scale(1.1);
     }
 }
-
 .seccion-texto a {
     color: var(--color-principal);
     font-size: 2.5rem;
@@ -284,24 +283,36 @@ img {
 }
 .seccion-info-itinerary img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
+    position: relative;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.63);
+    margin-bottom: 10px;
 }
 .seccion-info-itinerary span {
     font-size: 3rem;
     font-weight: 600;
     color: var(--color-principal);
 }
+.seccion-info-itinerary a {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 @media (min-width: 768px) {
+    .seccion-info-itinerary a {
+        flex-direction: row;
+    }
     .seccion-info-itinerary img {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+        margin: none;
+        width: 33%;
+        transition: 0.3s ease;
+    }
+    .seccion-info-itinerary img:hover {
+        z-index: 1;
+        transform: scale(1.1);   
     }
 }
-
 
 /* Adaptacion de la galeria de Yoksel  */
 .wrapper {
