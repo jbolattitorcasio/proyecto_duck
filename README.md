@@ -1,5 +1,5 @@
-# proyecto_duck
+# Proyecto_Duck
 
-  Pagina en proceso
+  Pagina abandonada debido a la decisión del cliente. Esta misma no llego a un desarrollo mayor que un boceto estructural de duración menor a 3 días.  
 
-  Display momentaneo en Netlify: https://sleepy-brahmagupta-f9b75b.netlify.app
+  Display del boceto en Netlify: https://sleepy-brahmagupta-f9b75b.netlify.app
